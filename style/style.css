@@ -367,6 +367,7 @@ ol.buy-plan_list {
     padding: 7px 10px;
     border: 1px solid white;
     border-radius: 5px;
+    margin-bottom: 20px;
 }
 
 .contacts-form_email {
@@ -374,6 +375,7 @@ ol.buy-plan_list {
     padding: 7px 10px;
     border: 1px solid white;
     border-radius: 5px;
+    margin-bottom: 20px;
 }
 
 .contacts-form_message {
@@ -381,6 +383,7 @@ ol.buy-plan_list {
     padding: 7px 10px;
     border: 1px solid white;
     border-radius: 5px;
+    margin-bottom: 20px;
 }
 
 .contacts-form_submit {
