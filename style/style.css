@@ -446,6 +446,10 @@ ol.buy-plan_list {
     letter-spacing: 1.5px;
 }
 
+.social-widget_link:hover {
+    border-bottom: 3px solid #fff;
+}
+
 .footer-text {
     background-color: #f5f5f5;
     text-align: center;
@@ -454,5 +458,3 @@ ol.buy-plan_list {
     font-weight: 400;
     line-height: 24px;
 }
-
-/* ToDo: сделать иконки соцсетей круглыми */
