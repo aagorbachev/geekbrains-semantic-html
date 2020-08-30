@@ -331,6 +331,12 @@ ol.buy-plan_list {
     border-radius: 5px;
 }
 
+.buy-plan_button:hover {
+    background-color: rgb(211, 211, 211);
+    transition: 1s;
+    cursor: pointer;
+}
+
 .contacts {
     padding: 50px;
     background-color: #445162;
@@ -362,7 +368,7 @@ ol.buy-plan_list {
     line-height: 24px;
 }
 
-.contacts-form_name {
+.contacts-form_field {
     width: 100%;
     padding: 7px 10px;
     border: 1px solid white;
@@ -370,20 +376,10 @@ ol.buy-plan_list {
     margin-bottom: 20px;
 }
 
-.contacts-form_email {
-    width: 100%;
+.contacts-form_output {
+    color: #ffffff;
+    text-align: center;
     padding: 7px 10px;
-    border: 1px solid white;
-    border-radius: 5px;
-    margin-bottom: 20px;
-}
-
-.contacts-form_message {
-    width: 100%;
-    padding: 7px 10px;
-    border: 1px solid white;
-    border-radius: 5px;
-    margin-bottom: 20px;
 }
 
 .contacts-form_submit {
@@ -399,6 +395,12 @@ ol.buy-plan_list {
     background-color: #ffffff;
     border: 1px solid #ffffff;
     border-radius: 5px;
+}
+
+.contacts-form_submit:hover {
+    background-color: rgb(211, 211, 211);
+    transition: 1s;
+    cursor: pointer;
 }
 
 .contacts-messengers_list-item {
