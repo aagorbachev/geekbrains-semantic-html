@@ -22,7 +22,8 @@
                     <li class="product-list-item">Associate the page with the payment system</li>
                 </ul>
             </div>
-            <img class="product-img" src="https://via.placeholder.com/470x215" alt="Illustration of product">
+            <video src="video/Official_Babylon-Berlin_OST.webm" controls preload="metadata" width="640" height="360">
+            </video>
         </div>
     </section>
     <section class="about">
@@ -186,7 +187,7 @@
                     <li class="buy-plan_list-item">Porro officia cumque sint deleniti;</li>
                     <li class="buy-plan_list-item">Porro officia cumque sint deleniti;</li>
                 </ol>
-                <button class="buy-plan_button">Buy</button>
+                <button class="buy-plan_button" type="submit" name="standard">Buy</button>
             </article>
             <article class="buy-plan">
                 <h3 class="buy-plan_title">Premium</h3>
@@ -201,7 +202,7 @@
                     <li class="buy-plan_list-item">Porro officia cumque sint deleniti;</li>
                     <li class="buy-plan_list-item">Porro officia cumque sint deleniti;</li>
                 </ol>
-                <button class="buy-plan_button">Buy</button>
+                <button class="buy-plan_button" type="submit" name="premium">Buy</button>
             </article>
             <article class="buy-plan">
                 <h3 class="buy-plan_title">Lux</h3>
@@ -220,7 +221,7 @@
                     <li class="buy-plan_list-item">Porro officia cumque sint deleniti;</li>
                     <li class="buy-plan_list-item">Porro officia cumque sint deleniti;</li>
                 </ol>
-                <button class="buy-plan_button">Buy</button>
+                <button class="buy-plan_button" type="submit" name="lux">Buy</button>
             </article>
         </div>
     </section>
@@ -228,11 +229,27 @@
         <div class="container flex-column-container">
             <h2 class="contacts-title">Contacts</h2>
             <div class="contacts-body">
-                <form class="contacts-form" action="#">
-                    <input class="contacts-form_name" type="text" name="name" placeholder="Your name:">
-                    <input class="contacts-form_email" type="text" name="email" placeholder="Your email:">
-                    <textarea class="contacts-form_message" name="message" id="message" cols="40" rows="6"
-                        placeholder="Your message:"></textarea>
+                <form class="contacts-form" action="#" oninput="result.value=(age.value)">
+                    <input class="contacts-form_field contacts-form_name" type="text" name="name"
+                        placeholder="Ваше имя*" required>
+                    <input class="contacts-form_field contacts-form_email" type="email" name="email"
+                        placeholder="Ваш адрес электронной почты*" required>
+                    <input class="contacts-form_field" type="tel" name="phone"
+                        placeholder="Ваш номер телефона в международном формате" required>
+                    <input type="range" min="18" max="100" step="1" value="18" id="age">
+                    <output class="contacts-form_output" for="age" name="result">Выберите значение,
+                        соответствующее вашему возрасту*</output>
+                    <input class="contacts-form_field" type="url" name="url"
+                        placeholder="Ссылка на профиль в социальной сети">
+                    <input class="contacts-form_field" type="text" list="contact-way"
+                        placeholder="Укажите предпочитаемый способ связи">
+                    <datalist id="contact-way">
+                        <option value="E-mail"></option>
+                        <option value="Телефон"></option>
+                        <option value="Социальная сеть"></option>
+                    </datalist>
+                    <textarea class="contacts-form_field" class="contacts-form_message" name="message" id="message"
+                        cols="40" rows="6" placeholder="Ваше сообщение*" required></textarea>
                     <input class="contacts-form_submit" type="submit" value="SEND">
                 </form>
                 <div class="contacts-social flex-column-container">
